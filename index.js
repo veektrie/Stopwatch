@@ -1,18 +1,8 @@
-checkSpeed(130);
+showNumbers ( 10);
 
-
-function checkSpeed(speed) {
-    const speedLimit= 70;
-    const kmPerPoint = 5;
-
-    if ( speed < speedLimit + kmPerPoint )
-    console.log('Ok');
-
-    else {
-        points = Math.floor ( ( speed - speedLimit) / kmPerPoint); points++;
-       if ( points >= 12)
-       console.log('License suspended'); 
-       else
-       console.log ('Points',points);
- }
+function showNumbers( limit ) {
+    for( let i=0; i <= limit; i++){
+      if ( i % 2 === 0) console.log( i , 'EVEN');
+      else console.log( i , 'ODD')
+    }
 }
